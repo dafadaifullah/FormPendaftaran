@@ -1,123 +1,261 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>FORM PENDAFTARAN</title>
-		<meta name="author" content="Dafa Daifullah">
+		<title>Form Pendaftaran</title>
+		<meta name='author' content='Dafa Daifullah'>
+		<style>
+			body{
+				background-color: lightgray;
+				font-family: cursive;
+				margin: 0px;
+				padding: 0px;
+				
+			}
+			fieldset{
+				background-color: lightblue;
+				border-radius: 15px;
+				border-style: solid;
+				border-color: black;
+			}
+			legend{
+				font-size: 30px;
+				font-style: italic;
+				border-style: solid;
+				border-color: black;
+				border-radius: 40px;
+				background-color: cyan;
+				border-width: 2px 2px;
+			}
+			.h2{
+				font-family: luxury;
+				color: black;
+				text-align: center;
+				font-size: 40px
+			}
+			input[type="text"],[type="date"],[type="email"],[type="number"],[type="file"]{
+				border-radius: 10px;
+				padding: 10px;
+				width: 90%;
+				background-color: gray;
+			}
+			textarea{
+				border-radius: 10px;
+				padding: 10px;
+				width: 90%;
+				background-color: gray;
+			}
+			select{
+				border-radius: 10px;
+				padding: 10px;
+				width: 90%;
+				background-color: gray;
+			}
+			#button{
+				border-radius: 10px;
+				padding: 15px;
+				background-color: white;
+				color: black;
+				font-size: 26px;
+			}
+			#button:hover{
+				border-radius: 10px;
+				padding: 15px;
+				background-color: blue;
+				color: black;
+				font-size: 30px;
+				font-weight: bold ;
+			}
+			header
+			{
+			background-color: black;
+			color:white;
+			text-align:center;
+			width:100%;
+			margin:0px;
+			height:80px;
+			top:0px:
+			}
+			h1
+			{
+			padding: 20px;
+			}
+			main
+			{
+			position:fixed;
+			widh:100%;
+			height:100%;
+			
+			}
+			
+			footer
+			{
+			background-color: black;
+			color:white;
+			text-align:center;
+			width:100%;
+			margin:0px;
+			height:80px;
+			position:fixed:
+			bottom: 0px;
+			widht: 100%;
+			}
+			h3
+			{
+			padding:20px
+			}
+			tabel
+			[
+			tr,
+			td,
+			border: red;
+			]
+		</style>
 	</head>
 	<body>
-	
-	<h2>Form Pendaftaran</h2>
-	<form action="" method="GET">
-	<table width="100%">
-		<td width="50%">
-			<fieldset>
-			<legend>Data Pribadi</legend>
-			<table cellpadding="5">
-				<tr>
-					<td><label>Nama Lengkap</label></td>
-					<td>: <input type="text" name="nama" id="id_nama" placeholder="input nama" required autofocus> 	</td>
-				</tr>
-				<tr>
-					<td><label>Email</label></td>
-					<td>: <input type="email" name="email"></td>
-				</tr>
-				<tr>
-					<td><label>Nomor Telepon</label></td>
-					<td>: <input type="tel" name="telsaya"></td>
-				</tr>
-				<tr>
-					<td><label>Alamat Lengkap</label></td>
-					<td valign="middle">: 
-						<textarea name="alamat" rows="8" cols="35"></textarea>
-					</td>
-				</tr>
-				<tr>
-					<td><label>Tanggal Lahir</label></td>
-					<td>: <input type="date" name="tgl-lahir"></td>
-				</tr>
-				<tr>
-					<td><label>Jenis Kelamin</label></td>
-					<td>: <input type="radio" name="jk" value="L">Laki-laki
-						<input type="radio" name="jk" value="P">Perempuan
-					</td>
-				</tr>
-				<tr>
-					<td><label>Agama</label></td>
-					<td>: 
-					<select name="prodi" required>
-						<option value="">Pilih Agama</option>
-							<option value="islam">Islam</option>
-							<option value="Kristen">Kristen</option>
-							<option value="buddha">buddha</option>
-							<option value="hindu">Hindu</option>
-						</select>
-				</tr>
-				<tr>
-					<td><label>Pendidikan Terakir</label></td>
-					<td>: <input type="radio" name="jk" value="sma">SMA
-						<input type="radio" name="jk" value="d3">D3
-						<input type="radio" name="jk" value="s1">S1
-					</td>
-				</tr>
-				<tr>
-					<td><label>Foto</label></td>
-					<td>: <input type="file" name="foto" accept="image/*"></td>
-				</tr>
-				<tr>
-					<td><label>CV</label></td>
-					<td>: <input type="file" name="cv" accept=".pdf"></td>
-				</tr>
-			</fieldset>
-			</table>
-		</td>
-		<td width="50%" valign="top">
-			<fieldset>
-			<legend>Data Orang Tua</legend>
-			<table cellpadding="5">
-				<tr>
-					<td><label>Nama Ayah</label></td>
-					<td>: <input type="text" name="nama" id="id_nama"></td>
-				</tr>
-				<tr>
-					<td><label>Pekerjaan Ayah</label></td>
-					<td>: <input type="text" name="pekerjaan" id="id_pekerjaan"></td>
-				</tr>
-				<tr>
-					<td><label>Alamat Ayah</label></td>
-					<td valign="middle">: <textarea name="alamat" rows="5" cols="20"></textarea></td>
-				</tr>
-				<tr>
-					<td><label>Nomor Telepon Ayah</label></td>
-					<td>: <input type="tel" name="telayah"></td>
-				</tr>
-				<tr>
-					<td><label>Nama Ibu</label></td>
-					<td>: <input type="text" name="namaibu" id="id_nama"></td>
-				</tr>
-				<tr>
-					<td><label>Pekerjaan Ibu</label></td>
-					<td>: <input type="text" name="perkerjaanibu" id="id_pekerjaanibu"></td>
-				</tr>
-				<tr>
-					<td><label>Alamat Ibu</label></td>
-					<td valign="middle">: <textarea name="alamat" rows="5" cols="20"></textarea></td>
-				</tr>
-				<tr>
-					<td><label>Nomor Ibu</label></td>
-					<td>: <input type="tel" name="telibu"></td>
-				</tr>
-				<tr>
-					<td colspan="2">
-					<input type="submit" value="Simpan">
-					<input type="reset" value="Reset">
-					</td>
-				</tr>
-			</table>
-			</fieldset>
-		</td>
-	</table>
-	
-	
+	<header><h1>My Landing Page</h1> </header>
+	<main></main>
+		<h2 class="h2">Form Pendaftaran</h2>
+		<form action="" method="GET">
+		<table width="100%">
+			<tr>
+				<td width="50%">
+					<fieldset>
+						<legend>Data Pribadi</legend>
+						<table cellpadding="5" width="100%">
+							<tr>
+								<td width="100"><label for="id_nama">Nama Lengkap</label></td>
+								<td>:</td>
+								<td><input type="text" name="nama" id="id_nama" placeholder="Masukkan Nama" required autofocus> </td>
+							</tr>
+							<tr>
+								<td><label>Email </label></td>
+								<td>:</td>
+								<td><input type="email" name="email"></td>
+							</tr>
+							<tr>
+								<td><label>Nomor Telepon </label></td>
+								<td>:</td>
+								<td><input type="number" name="password"></td>
+							</tr>
+							<tr>
+								<td><label>Alamat </label></td>
+								<td>:</td>
+								<td>
+									<textarea name="alamat" rows="3" cols="30"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td><label>Tanggal Lahir </label></td>
+								<td>:</td>
+								<td><input type="date" name="tanggal"></td>
+							</tr>
+							<tr>
+								<td><label>Jenis Kelamin </label></td>
+								<td>:</td>
+								<td>
+									<input type="radio" name="jk" value="l"> Laki-laki
+									<input type="radio" name="jk" value="p"> Perempuan
+								</td>
+							</tr>
+							<tr>
+								<td><label>Agama </label></td>
+								<td>:</td>
+								<td>
+									<select name="agama" required>
+										<option value="">Pilih Agama</option>
+										<option value="islam">Islam</option>
+										<option value="protestan">Kristen Protestan</option>
+										<option value="katolik">Katolik</option>
+										<option value="hindu">Hindu</option>
+										<option value="buddha">Buddha</option>
+										<option value="khc">Konghucu</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><label>Pendidikan Terakhir </label></td>
+								<td>:</td>
+								<td>
+									<input type="radio" name="pendidikan" value="sma"> SMA
+									<input type="radio" name="pendidikan" value="d3"> D3
+									<input type="radio" name="pendidikan" value="s1"> S1
+								</td>
+							</tr>
+							<tr>
+								<td><label>Pas Foto </label></td>
+								<td>:</td>
+								<td><input type="file" name="foto" accept="image/jpeg"></td>
+							</tr>
+							<tr>
+								<td><label>CV </label></td>
+								<td>:</td>
+								<td><input type="file" name="cv" accept=".pdf"></td>
+							</tr>
+						</table>
+					</fieldset>
+				</td>
+				<td width="50%" valign="top">
+					<fieldset>
+						<legend>Data Orang Tua</legend>
+						<table cellpadding="5" width="100%"  border="1">
+							<tr>
+								<td><label>Nama Ayah </label></td>
+								<td>:</td>
+								<td><input type="text" name="ayah"></td>
+							</tr>
+								<td><label>Pekerjaan Ayah </label></td>
+								<td>:</td>
+								<td><input type="text" name="pekerjaan_ayah"></td>
+							</tr>
+							<tr>
+								<td><label>Alamat Ayah</label></td>
+								<td>:</td>
+								<td>
+									<textarea name="alamat_ayah" rows="3" cols="30"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td><label>Nomor Telepon Ayah </label></td>
+								<td>:</td>
+								<td><input type="text" name="telepon_ayah"></td>
+							</tr>
+							<tr>
+								<td><label>Nama Ibu </label></td>
+								<td>:</td>
+								<td><input type="text" name="ibu"></td>
+							</tr>
+							<tr>
+								<td><label>Pekerjaan Ibu </label></td>
+								<td>:</td>
+								<td><input type="text" name="pekerjaan_ibu"></td>
+							</tr>
+							<tr>
+								<td><label>Alamat Ibu</label></td>
+								<td>:</td>
+								<td>
+									<textarea name="alamat_ibu" rows="3" cols="30"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td><label>Nomor Telepon Ibu </label></td>
+								<td>:</td>
+								<td><input type="text" name="telepon_ibu"></td>
+							</tr>
+							<tr>
+							<tr colspan="2">
+								<td>
+									<input type="submit" value="Submit" id="button">
+									<input type="reset" value="Reset" id="button"></input>
+								</td>
+							</tr>
+						</table>
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+		</form>
+		
+		<main></main>
+		<footer><h3>&copy;2025 My Website,All Rights Reserved</h3></footer>
 	</body>
 </html>
